@@ -51,11 +51,11 @@ h1{
   text-align: center;
   font-size: 3.5rem;
   padding:1rem;
-  color:#666;
+  color:#222;
 }
 
 .heading span{
-  color:var(--red);
+  color:#461102;
 }
 
 .btn{
@@ -200,9 +200,8 @@ header .navbar a:hover{
   font-family: 'Playfair Display', serif;
   font-size: 1.7rem;
   padding:1rem 0;
-  text-shadow: 2px 2px 5px #222;
   color: #222;;
-  background: #fddb92a3;
+  background: #fddb92ce;
   padding: 10px;
   border-radius: 3px;
 }
@@ -308,16 +307,30 @@ header .navbar a:hover{
 /*----------------------------------menu book--------------------------------------------------------*/
 
 /* Book */
+
 .menu-book{
-  
+  margin-top: 69px;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid red;
+}
+header .menu-logo{
+  height: 0.05rem;
+  margin-top: -10px;
+}
+header .menu-logo img{
+     width: 145px; 
+     background: linear-gradient(to bottom,#fddb92 0%, #fff 50%, #fddb92 100% );
+     border-radius: 45px;
+     padding: 20px 8px;
+     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.7);
 }
 .book {
   position: relative;
-  width: 350px;
-  height: 500px;
+  width: 450px;
+  height: 600px;
   transition: transform 0.5s;
 }
 
@@ -346,7 +359,7 @@ header .navbar a:hover{
 .front {
   z-index: 1;
   backface-visibility: hidden;
-  border-left: 3px solid powderblue;
+  border-left: 4px solid #461102;
 }
 
 .back {
@@ -355,13 +368,17 @@ header .navbar a:hover{
 
 .front-content,
 .back-content {
-  width: 100%;
-  height: 100%;
+  width: 450px;
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+.front-content img,
+.back-content img{
+  width: 100%;
+  height: 100%;
+}
 .back-content {
   transform: rotateY(180deg)
 }
@@ -396,16 +413,38 @@ i {
 
 /* Paper stack order */
 #p1 {
-  z-index: 3;
+  z-index: 10;
 }
 
 #p2 {
-  z-index: 2;
+  z-index: 9;
 }
 
 #p3 {
+  z-index: 8;
+}
+#p4 {
+  z-index: 7;
+}
+#p5 {
+  z-index: 6;
+}
+#p6 {
+  z-index: 5;
+}
+#p7 {
+  z-index: 4;
+}
+#p8 {
+  z-index: 3;
+}
+#p9 {
+  z-index: 2;
+}
+#p10 {
   z-index: 1;
 }
+
 
 
 
@@ -424,6 +463,34 @@ i {
  #c1:checked ~ .flip-book #p4{
   transform: rotateY(-180deg);
   z-index: 7;
+ }
+ #c1:checked ~ .flip-book #p5{
+  transform: rotateY(-180deg);
+  z-index: 9;
+ }
+ #c1:checked ~ .flip-book #p6{
+  transform: rotateY(-180deg);
+  z-index: 11;
+ }
+ #c1:checked ~ .flip-book #p7{
+  transform: rotateY(-180deg);
+  z-index: 13;
+ }
+ #c1:checked ~ .flip-book #p8{
+  transform: rotateY(-180deg);
+  z-index: 15;
+ }
+ #c1:checked ~ .flip-book #p9{
+  transform: rotateY(-180deg);
+  z-index: 17;
+ }
+ #c1:checked ~ .flip-book #p10{
+  transform: rotateY(-180deg);
+  z-index: 19;
+ }
+ #c1:checked ~ .flip-book #p11{
+  transform: rotateY(-180deg);
+  z-index: 20;
  }
 */
 

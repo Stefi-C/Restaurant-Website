@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>complete responsive food website design tutorial </title>
+    
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+        <!-- custom css file link  -->
+        <link rel="stylesheet" href="style.css">
+            
+    
+    </head>
+<body class="menu-html">
+    <header>
+
+        <a href="#" class="menu-logo"><img src="/assets/icon.jpeg" alt=""></a>
+    
+        <div id="menu-bar" class="fas fa-bars"></div>
+    
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#speciality">Speciality</a>
+            <a href="#popular">Popular</a>
+            <a href="menu.html">Menu</a>
+            <a href="#about-us">About Us</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#review">Review</a>
+            <a href="#order">Book Now</a>
+        </nav>
+    
+    </header>
+
+
+    
+<div id="menu-book" class="menu-book">
+    
+    <!-- Previous Button -->
+    <button id="prev-btn">
+        <i class="fas fa-arrow-circle-left"></i>
+    </button>
+
+
+    <!-- Book -->
+    <div id="book" class="book">
+        <!-- Paper 1 -->
+        <div id="p1" class="paper">
+            <div class="front">
+                <div id="f1" class="front-content">
+                   <img src="/assets/menu-book/carte.jpeg" alt="">
+                </div>
+            </div>
+            <div class="back">
+                <div id="b1" class="back-content">
+                    <img src="/assets/menu-book/carte1.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Paper 2 -->
+        <div id="p2" class="paper">
+            <div class="front">
+                <div id="f2" class="front-content">
+                    <img src="/assets/menu-book/carte2.jpeg" alt="">
+                </div>
+            </div>
+            <div class="back">
+                <div id="b2" class="back-content">
+                    <img src="/assets/menu-book/carte3.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Paper 3 -->
+        <div id="p3" class="paper">
+            <div class="front">
+                <div id="f3" class="front-content">
+                    <img src="/assets/menu-book/carte4.jpeg" alt="">
+                </div>
+            </div>
+            <div class="back">
+                <div id="b3" class="back-content">
+                    <img src="/assets/menu-book/carte5.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+         <!-- Paper 4 -->
+         <div id="p4" class="paper">
+            <div class="front">
+                <div id="f4" class="front-content">
+                    <img src="/assets/menu-book/carte6.jpeg" alt="">
+                </div>
+            </div>
+            <div class="back">
+                <div id="b4" class="back-content">
+                    <img src="/assets/menu-book/carte7.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+         <!-- Paper 5 -->
+         <div id="p5" class="paper">
+            <div class="front">
+                <div id="f5" class="front-content">
+                    <img src="/assets/menu-book/carte8.jpeg" alt="">
+                </div>
+            </div>
+            <div class="back">
+                <div id="b5" class="back-content">
+                    <img src="/assets/menu-book/carte9.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+         <!-- Paper 6 -->
+         <div id="p6" class="paper">
+            <div class="front">
+                <div id="f6" class="front-content">
+                    <img src="/assets/menu-book/carte10.jpeg" alt="">
+                </div>
+            </div>
+            <div class="back">
+                <div id="b6" class="back-content">
+                    <img src="/assets/menu-book/carte11.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+         <!-- Paper 7 -->
+         <div id="p7" class="paper">
+            <div class="front">
+                <div id="f7" class="front-content">
+                    <img src="/assets/menu-book/carte12.jpeg" alt="">
+                </div>
+            </div>
+            <div class="back">
+                <div id="b7" class="back-content">
+                    <img src="/assets/menu-book/carte13.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+         <!-- Paper 8 -->
+         <div id="p8" class="paper">
+            <div class="front">
+                <div id="f8" class="front-content">
+                    <img src="/assets/menu-book/carte14.jpeg" alt="">
+                </div>
+            </div>
+            <div class="back">
+                <div id="b8" class="back-content">
+                    <img src="/assets/menu-book/carte15.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+         <!-- Paper 9 -->
+         <div id="p9" class="paper">
+            <div class="front">
+                <div id="f9" class="front-content">
+                    <img src="/assets/menu-book/carte16.jpeg" alt="">
+                </div>
+            </div>
+            <div class="back">
+                <div id="b9" class="back-content">
+                    <img src="/assets/menu-book/carte17.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+         <!-- Paper 10 -->
+         <div id="p10" class="paper">
+            <div class="front">
+                <div id="f10" class="front-content">
+                    <img src="/assets/menu-book/carte18.jpeg" alt="">
+                </div>
+            </div>
+            <div class="back">
+                <div id="b10" class="back-content">
+                    <img src="/assets/menu-book/carte19.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Next Button -->
+    <button id="next-btn">
+        <i class="fas fa-arrow-circle-right"></i>
+    </button>
+</div>
+
+    
+<script type="module">
+    
+//flipbook
+const prevBtn = document.querySelector("#prev-btn");
+const nextBtn = document.querySelector("#next-btn");
+const book = document.querySelector("#book");
+
+const paper1 = document.querySelector("#p1");
+const paper2 = document.querySelector("#p2");
+const paper3 = document.querySelector("#p3");
+const paper4 = document.querySelector("#p4");
+const paper5 = document.querySelector("#p5");
+const paper6 = document.querySelector("#p6");
+const paper7 = document.querySelector("#p7");
+const paper8 = document.querySelector("#p8");
+const paper9 = document.querySelector("#p9");
+const paper10 = document.querySelector("#p10");
+
+// Event Listener
+prevBtn.addEventListener("click", goPrevPage);
+nextBtn.addEventListener("click", goNextPage);
+
+// Business Logic
+let currentLocation = 1;
+let numOfPapers = 20;
+let maxLocation = numOfPapers + 1;
+
+function openBook() {
+    book.style.transform = "translateX(50%)";
+    prevBtn.style.transform = "translateX(-225px)";
+    nextBtn.style.transform = "translateX(225px)";
+}
+
+function closeBook(isAtBeginning) {
+    if(isAtBeginning) {
+        book.style.transform = "translateX(0%)";
+    } else {
+        book.style.transform = "translateX(100%)";
+    }
+    
+    prevBtn.style.transform = "translateX(0px)";
+    nextBtn.style.transform = "translateX(0px)";
+}
+
+function goNextPage() {
+    if(currentLocation < maxLocation) {
+        switch(currentLocation) {
+            case 1:
+                openBook();
+                paper1.classList.add("flipped");
+                paper1.style.zIndex = 1;
+                break;
+            case 2:
+                paper2.classList.add("flipped");
+                paper2.style.zIndex = 2;
+                break;
+            case 3:
+                paper3.classList.add("flipped");
+                paper3.style.zIndex = 3;
+                closeBook(false);
+                break;
+            case 4:
+                paper3.classList.add("flipped");
+                paper3.style.zIndex = 8;
+                break;
+            case 5:
+                paper1.classList.add("flipped");
+                paper1.style.zIndex = 7;
+                break;
+            case 5:
+                paper2.classList.add("flipped");
+                paper2.style.zIndex = 6;
+                break;
+            case 7:
+                paper3.classList.add("flipped");
+                paper3.style.zIndex = 5;
+                break;
+            case 8:
+                paper3.classList.add("flipped");
+                paper3.style.zIndex = 4;
+                break;
+            case 9:
+                paper3.classList.add("flipped");
+                paper3.style.zIndex = 2;
+                break;
+            case 10:
+                closeBook();
+                paper3.classList.add("flipped");
+                paper3.style.zIndex = 1;
+                break;
+            default:
+                throw new Error("unkown state");
+        }
+        currentLocation++;
+    }
+}
+
+function goPrevPage() {
+    if(currentLocation > 1) {
+        switch(currentLocation) {
+            case 2:
+                closeBook(true);
+                paper1.classList.remove("flipped");
+                paper1.style.zIndex = 10;
+                break;
+            case 3:
+                paper2.classList.remove("flipped");
+                paper2.style.zIndex = 9;
+                break;
+            case 4:
+              
+                paper3.classList.remove("flipped");
+                paper3.style.zIndex = 8;
+                break;
+            case 5:
+                paper1.classList.remove("flipped");
+                paper1.style.zIndex = 7;
+                break;
+            case 5:
+                paper2.classList.remove("flipped");
+                paper2.style.zIndex = 6;
+                break;
+            case 7:
+                paper3.classList.remove("flipped");
+                paper3.style.zIndex = 5;
+                break;
+            case 8:
+                paper3.classList.remove("flipped");
+                paper3.style.zIndex = 4;
+                break;
+            case 9:
+                paper3.classList.remove("flipped");
+                paper3.style.zIndex = 2;
+                break;
+            case 10:
+                closeBook();
+                paper3.classList.remove("flipped");
+                paper3.style.zIndex = 1;
+                break;
+            default:
+                throw new Error("unkown state");
+        }
+
+        currentLocation--;
+    }
+}
+
+</script>  
+</body>
+</html>
