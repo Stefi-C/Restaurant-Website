@@ -26,7 +26,7 @@ html{
   scroll-padding-top: 6rem;
 }
 html::-webkit-scrollbar-track{
-    background-image: linear-gradient(to bottom, #fddb92 0%, #461102 100%);
+    background-image: linear-gradient(to bottom,#fff 0%, #fddb92 50%, #461102 100%);
 }
 html::-webkit-scrollbar{
     width:1rem;
@@ -37,7 +37,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background-image: linear-gradient(to bottom, #fddb92 0%,#000 20% ,#8B0000 100%);
+    background-image: linear-gradient(to bottom, #fff 0%, #fddb92 20% ,#461102 100%);
 }
 
 section{
@@ -92,7 +92,7 @@ h1{
 
 .btn:hover{
   color:#8B0000;
-  background-color: #fddb92a6;
+  background-color: #fddb928a;
 }
 
 header{
@@ -102,7 +102,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: linear-gradient(to bottom, #fff 20% ,#8B0000 100%);
+  background: linear-gradient(to bottom, #fff 0%, #fddb92 100% );
   padding:2rem 9%;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
   border-radius: 0 0 15px 15px;
@@ -115,7 +115,7 @@ header .logo{
 }
 header .logo img{
      width: 245px; 
-     background-color: #fddb92;
+     background: linear-gradient(to bottom,#fddb92 0%, #fff 50%, #fddb92 100% );
      border-radius: 45px;
      padding: 20px 8px;
      box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.7);
@@ -149,7 +149,7 @@ header .navbar a:hover{
   gap:1.5rem;
   min-height: 100vh;
   align-items: center;
-  background:url(/assets/banner.jpg) no-repeat;
+  background:url(/assets/banner.jpeg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -163,14 +163,15 @@ header .navbar a:hover{
      font-weight: 100;
      color: #fddb92;
      font-size: 5rem;
-     text-shadow: 0 0.5rem 1rem rgba(0,0,0,0.7);
+     text-shadow: 2px 2px 3px #222;
 }
 .home .content span{
     font-family: 'Playfair Display', serif;
     font-weight: 900;
-    font-size: 150px;
+    font-size: 100px;
     color: antiquewhite;
 }
+
 .home .image{
   flex:1 1 30rem;
 }
@@ -180,7 +181,7 @@ header .navbar a:hover{
   animation:float 5s linear infinite;
     background-color: #fddb92c5;
     border-radius: 50%;
-    width: 100px;
+    width: 200px;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.7) ;
 }
 
@@ -196,11 +197,14 @@ header .navbar a:hover{
 
 
 .home .content p{
-    font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 1.7rem;
-  color:antiquewhite;
   padding:1rem 0;
-  text-shadow: 0 0.5rem 1rem rgba(0,0,0,0.7);
+  text-shadow: 2px 2px 5px #222;
+  color: #222;;
+  background: #fddb92a3;
+  padding: 10px;
+  border-radius: 3px;
 }
 
 .speciality .box-container{
