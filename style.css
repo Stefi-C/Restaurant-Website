@@ -314,7 +314,6 @@ header .navbar a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid red;
 }
 header .menu-logo{
   height: 0.05rem;
