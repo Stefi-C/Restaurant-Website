@@ -102,7 +102,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: linear-gradient(to bottom, #000 20% ,#8B0000 100%);
+  background-image: linear-gradient(to bottom, #fff 20% ,#8B0000 100%);
   padding:2rem 9%;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
   border-radius: 0 0 15px 15px;
@@ -116,20 +116,21 @@ header .logo{
 header .logo img{
      width: 245px; 
      background-color: #fddb92;
-     border-radius: 50px;
-     padding: 15px 8px;
+     border-radius: 45px;
+     padding: 20px 8px;
      box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.7);
 }
 
 
 header .navbar a{
-  font-size: 1.7rem;
+  font-size: 18px;
   margin-left: 2rem;
-  color:#7f6e49;
+  color:#222;
+  opacity: .5;
 }
 
 header .navbar a:hover{
-  color:var(--red);
+  opacity: 1;
 }
 
 #menu-bar{
