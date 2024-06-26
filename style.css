@@ -304,6 +304,12 @@ header .navbar a:hover{
 /*----------------------------------menu book--------------------------------------------------------*/
 
 /* Book */
+.menu-book{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .book {
   position: relative;
   width: 350px;
