@@ -52,6 +52,7 @@ h1{
   font-size: 3.5rem;
   padding:1rem;
   color:#222;
+  text-transform: capitalize;
 }
 
 .heading span{
@@ -105,7 +106,7 @@ header{
   background: linear-gradient(to bottom, #fff 0%, #fddb92 100% );
   padding:2rem 9%;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-  border-radius: 0 0 15px 15px;
+  border-radius: 0 0 3px 3px;
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.7);
 }
 
@@ -315,8 +316,8 @@ header .navbar a:hover{
 .menu-book{
   background: url(/assets/menu-bg.jpeg) no-repeat;
   background-size: cover;
-  margin-top: 69px;
-  height: 90vh;
+  margin-top: 60px;
+  height: 92vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -542,7 +543,7 @@ i {
 
 .steps .box h3{
   font-size: 2.5rem;
-  color:#f7f7f7;
+  color:#fddb92;
   padding:1rem;
   text-shadow:  0 .5rem 1rem rgba(0,0,0,.9);
 }
@@ -895,6 +896,14 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button{
 textarea{
  padding: 10px;
  font-size: 18px;
+ resize: none;
+}
+.submit{
+  padding: 5px;
+  background-color: #461102;
+  color: #fff;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 

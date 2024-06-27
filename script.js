@@ -81,5 +81,5 @@ window.onload = fadeOut();
         }
       })
      
-
+      console.log(images.length);
   

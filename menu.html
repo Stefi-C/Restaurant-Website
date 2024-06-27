@@ -17,7 +17,7 @@
             
     
     </head>
-<body class="menu-html">
+<body style="overflow: hidden;">
     <header>
 
         <a href="#" class="menu-logo"><img src="/assets/icon.jpeg" alt=""></a>
@@ -28,11 +28,11 @@
             <a href="index.html#home">Home</a>
             <a href="index.html#speciality">Speciality</a>
             <a href="index.html#popular">Popular</a>
-            <a href="menu.html">Menu</a>
             <a href="index.html#about-us">About Us</a>
             <a href="index.html#gallery">Gallery</a>
             <a href="index.html#review">Review</a>
             <a href="index.html#order">Book Now</a>
+            <a href="menu.html">Menu</a>
         </nav>
     
     </header>
@@ -178,6 +178,20 @@
                     <img src="/assets/menu-book/carte19.jpeg" alt="">
                 </div>
             </div>
+            
+        </div>
+        <div id="p10" class="paper">
+            <div class="front">
+                <div id="f10" class="front-content">
+                    <img src="/assets/menu-book/carte18.jpeg" alt="">
+                </div>
+            </div>
+            <div class="back">
+                <div id="b10" class="back-content">
+                    <img src="/assets/menu-book/carte19.jpeg" alt="">
+                </div>
+            </div>
+            
         </div>
     </div>
 
@@ -189,9 +203,7 @@
 
     
 <script type="module">
-    
-//flipbook
-const prevBtn = document.querySelector("#prev-btn");
+  const prevBtn = document.querySelector("#prev-btn");
 const nextBtn = document.querySelector("#next-btn");
 const book = document.querySelector("#book");
 
@@ -205,6 +217,7 @@ const paper7 = document.querySelector("#p7");
 const paper8 = document.querySelector("#p8");
 const paper9 = document.querySelector("#p9");
 const paper10 = document.querySelector("#p10");
+const paper11 = document.querySelector("#p11"); // Nuova pagina
 
 // Event Listener
 prevBtn.addEventListener("click", goPrevPage);
@@ -212,7 +225,7 @@ nextBtn.addEventListener("click", goNextPage);
 
 // Business Logic
 let currentLocation = 1;
-let numOfPapers = 20;
+let numOfPapers = 11;  // Aggiornato per includere la nuova pagina
 let maxLocation = numOfPapers + 1;
 
 function openBook() {
@@ -222,7 +235,7 @@ function openBook() {
 }
 
 function closeBook(isAtBeginning) {
-    if(isAtBeginning) {
+    if (isAtBeginning) {
         book.style.transform = "translateX(0%)";
     } else {
         book.style.transform = "translateX(100%)";
@@ -233,8 +246,8 @@ function closeBook(isAtBeginning) {
 }
 
 function goNextPage() {
-    if(currentLocation < maxLocation) {
-        switch(currentLocation) {
+    if (currentLocation < maxLocation) {
+        switch (currentLocation) {
             case 1:
                 openBook();
                 paper1.classList.add("flipped");
@@ -247,94 +260,152 @@ function goNextPage() {
             case 3:
                 paper3.classList.add("flipped");
                 paper3.style.zIndex = 3;
-                closeBook(false);
                 break;
             case 4:
-                paper3.classList.add("flipped");
-                paper3.style.zIndex = 8;
+                paper4.classList.add("flipped");
+                paper4.style.zIndex = 4;
                 break;
             case 5:
-                paper1.classList.add("flipped");
-                paper1.style.zIndex = 7;
+                paper5.classList.add("flipped");
+                paper5.style.zIndex = 5;
                 break;
-            case 5:
-                paper2.classList.add("flipped");
-                paper2.style.zIndex = 6;
+            case 6:
+                paper6.classList.add("flipped");
+                paper6.style.zIndex = 6;
                 break;
             case 7:
-                paper3.classList.add("flipped");
-                paper3.style.zIndex = 5;
+                paper7.classList.add("flipped");
+                paper7.style.zIndex = 7;
                 break;
             case 8:
-                paper3.classList.add("flipped");
-                paper3.style.zIndex = 4;
+                paper8.classList.add("flipped");
+                paper8.style.zIndex = 8;
                 break;
             case 9:
-                paper3.classList.add("flipped");
-                paper3.style.zIndex = 2;
+                paper9.classList.add("flipped");
+                paper9.style.zIndex = 9;
                 break;
             case 10:
-                closeBook();
-                paper3.classList.add("flipped");
-                paper3.style.zIndex = 1;
+                paper10.classList.add("flipped");
+                paper10.style.zIndex = 10;
+                break;
+            case 11:
+                paper11.classList.add("flipped");
+                paper11.style.zIndex = 11;
+                closeBook(false);
                 break;
             default:
-                throw new Error("unkown state");
+                throw new Error("unknown state");
         }
         currentLocation++;
+        updateButtonVisibility();
+    } else {
+        // Torna all'inizio
+        currentLocation = 1;
+        closeBook(true);
+        resetPages();
+        updateButtonVisibility();
     }
 }
 
 function goPrevPage() {
-    if(currentLocation > 1) {
-        switch(currentLocation) {
+    if (currentLocation > 1) {
+        switch (currentLocation) {
             case 2:
                 closeBook(true);
                 paper1.classList.remove("flipped");
-                paper1.style.zIndex = 10;
+                paper1.style.zIndex = 11;
                 break;
             case 3:
                 paper2.classList.remove("flipped");
-                paper2.style.zIndex = 9;
+                paper2.style.zIndex = 10;
                 break;
             case 4:
-              
                 paper3.classList.remove("flipped");
-                paper3.style.zIndex = 8;
+                paper3.style.zIndex = 9;
                 break;
             case 5:
-                paper1.classList.remove("flipped");
-                paper1.style.zIndex = 7;
+                paper4.classList.remove("flipped");
+                paper4.style.zIndex = 8;
                 break;
-            case 5:
-                paper2.classList.remove("flipped");
-                paper2.style.zIndex = 6;
+            case 6:
+                paper5.classList.remove("flipped");
+                paper5.style.zIndex = 7;
                 break;
             case 7:
-                paper3.classList.remove("flipped");
-                paper3.style.zIndex = 5;
+                paper6.classList.remove("flipped");
+                paper6.style.zIndex = 6;
                 break;
             case 8:
-                paper3.classList.remove("flipped");
-                paper3.style.zIndex = 4;
+                paper7.classList.remove("flipped");
+                paper7.style.zIndex = 5;
                 break;
             case 9:
-                paper3.classList.remove("flipped");
-                paper3.style.zIndex = 2;
+                paper8.classList.remove("flipped");
+                paper8.style.zIndex = 4;
                 break;
             case 10:
-                closeBook();
-                paper3.classList.remove("flipped");
-                paper3.style.zIndex = 1;
+                paper9.classList.remove("flipped");
+                paper9.style.zIndex = 3;
+                break;
+            case 11:
+                paper10.classList.remove("flipped");
+                paper10.style.zIndex = 2;
+                break;
+            case 12:
+                closeBook(false);
+                paper11.classList.remove("flipped");
+                paper11.style.zIndex = 1;
                 break;
             default:
-                throw new Error("unkown state");
+                throw new Error("unknown state");
         }
-
         currentLocation--;
+        updateButtonVisibility();
+    } else {
+        // Torna alla fine
+        currentLocation = numOfPapers + 1;
+        openBook();
+        flipAllPages();
+        updateButtonVisibility();
     }
 }
 
-</script>  
+function resetPages() {
+    const papers = [paper1, paper2, paper3, paper4, paper5, paper6, paper7, paper8, paper9, paper10, paper11];
+    papers.forEach((paper, index) => {
+        paper.classList.remove("flipped");
+        paper.style.zIndex = numOfPapers - index;
+    });
+}
+
+function flipAllPages() {
+    const papers = [paper1, paper2, paper3, paper4, paper5, paper6, paper7, paper8, paper9, paper10, paper11];
+    papers.forEach((paper, index) => {
+        paper.classList.add("flipped");
+        paper.style.zIndex = index + 1;
+    });
+}
+
+function updateButtonVisibility() {
+    if (currentLocation === 1) {
+        prevBtn.style.display = "none";
+    } else {
+        prevBtn.style.display = "block";
+    }
+
+    if (currentLocation === maxLocation) {
+        nextBtn.style.display = "none";
+    } else {
+        nextBtn.style.display = "block";
+    }
+}
+
+// Inizializza la visibilità dei pulsanti al caricamento della pagina
+updateButtonVisibility();
+
+
+
+</script>
 </body>
 </html>
