@@ -24,6 +24,7 @@ html{
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 6rem;
+  text-transform: capitalize;
 }
 html::-webkit-scrollbar-track{
     background-image: linear-gradient(to bottom,#fff 0%, #fddb92 50%, #461102 100%);
@@ -513,6 +514,11 @@ i {
 }
 .step-left-box{
   width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
 }
 .step-right-box{
   width: 40%;
@@ -520,6 +526,9 @@ i {
   justify-content: center;
   align-items: center;
   font-size: 20px;
+}
+.step-left-box p{
+  width: 80%;
 }
 .step-right-box p{
   width: 80%;
@@ -846,8 +855,9 @@ i {
   align-items: center;
 }
 .timing h2{
+
   font-size: 35px;
-  padding-bottom: 5px;
+  padding: 5px;
   border-bottom: 4px solid #222;
 }
 .timing i{
@@ -856,7 +866,7 @@ i {
   color: #461102;
 }
 .timing p{
-  font-size: 35px;
+  font-size: 32px;
 }
 .contact-us{
   display: flex;
@@ -911,7 +921,6 @@ textarea{
 .footer{
   background:#000;
   text-align: center;
-  display: i;
   gap:2.5rem;
   justify-content: center;
   flex-wrap: no-wrap;
@@ -932,11 +941,13 @@ textarea{
 
 }
 .wrapper .icon span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  height: 60px;
-  width: 60px;
-  display: block;
-  background-color: #8B0000;
+  height: 30px;
+  width: 30px;
+  background-color: #461102;
   text-align: center;
   border-radius: 40%;
   box-shadow: 0 10px 10px rgba(0,0,0,0.7);
@@ -944,18 +955,17 @@ textarea{
 .wrapper .icon span i{
   text-shadow:0 10px 10px rgba(0,0,0,0.7);
   color: #fddb92;
-  font-size: 25px;
-  line-height: 60px;
+  font-size: 16px;
 
 }
 .wrapper .icon .tooltip{
   font-family: 'Poppins', serif;
-  font-weight: 200;
+  font-weight: 100;
   color: #461102;
   position: absolute;
   top: 0px;
   background-color: #fddb92;
-  font-size: 20px;
+  font-size: 12px;
   padding: 10px 18px;
   border-radius: 25px;
   box-shadow: 0 10px 10px rgba(0,0,0,0.1);
@@ -1001,7 +1011,10 @@ textarea{
   border-radius: 35px;
 }
 .copyright h1{
-  font-size: 6px;
+  font-size: 12px;
+}
+.copyright a{
+  color: #461102;
 }
 
 
