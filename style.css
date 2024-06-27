@@ -313,6 +313,8 @@ header .navbar a:hover{
 /* Book */
 
 .menu-book{
+  background: url(/assets/menu-bg.jpeg) no-repeat;
+  background-size: cover;
   margin-top: 69px;
   height: 90vh;
   display: flex;
